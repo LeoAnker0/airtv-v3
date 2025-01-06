@@ -224,8 +224,12 @@ nav {
     .nav-item a {
         display: flex;
         width: 100%;
-        background-cololr: red;
         position: relative;
+    }
+
+    .nav-item .navText {
+        display: flex;
+        width: 100%;
     }
 
     .floatRight {
