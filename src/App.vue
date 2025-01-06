@@ -36,6 +36,12 @@
                         <router-link class="navText" to="/welfare">Welfare</router-link>
                     </div>
                 </div>
+                <div class="nav-item mobile-item">
+                    <router-link class="navText" to="/kit">Kit</router-link>
+                </div>
+                <div class="nav-item mobile-item">
+                    <router-link class="navText" to="/welfare">Welfare</router-link>
+                </div>
             </div>
         </nav>
         <div id="content">
@@ -118,6 +124,10 @@ nav {
     }
 }
 
+.mobile-item {
+    display: none;
+}
+
 
 #menu-toggle {
     display: none;
@@ -178,15 +188,21 @@ nav {
         display: block;
     }
 
+    nav {}
+
     .nav-links {
+        overflow: hidden;
         display: none;
         flex-direction: column;
+        text-align: left;
+
         position: absolute;
         top: 3rem;
         left: 0;
-        width: 100%;
+        width: calc(100% - 2rem);
         background-color: hsl(200, 40%, 20%);
         padding: 1rem 0;
+        padding-left: 2rem;
         gap: 0.5rem;
     }
 
@@ -198,6 +214,22 @@ nav {
         position: static;
         background-color: hsl(200, 40%, 25%);
         padding-left: 1rem;
+        z-index: 40;
+    }
+
+    .mobile-item {
+        display: flex;
+    }
+
+    .nav-item a {
+        display: flex;
+        width: 100%;
+        background-cololr: red;
+        position: relative;
+    }
+
+    .floatRight {
+        display: none;
     }
 }
 </style>
