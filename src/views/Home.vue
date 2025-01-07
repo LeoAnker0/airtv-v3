@@ -1,6 +1,10 @@
+<script setup>
+import HeroCarousel from '../components/HeroCarousel.vue'
+</script>
 <template>
     <div class="home">
         <!-- Hero Section -->
+        <!--
         <section class="hero">
             <img class="hero-image" src="../assets/hero-image.jpeg" alt="Hero Image" />
             <div class="hero-text">
@@ -8,76 +12,11 @@
                 <p>Your journey starts here. Explore, learn, and grow with us.</p>
                 <button @click="learnMore">Learn More</button>
             </div>
+        </section>-->
+        <section class="hero">
+            <HeroCarousel />
         </section>
         <!-- Content Section -->
-        <section class="content">
-            <h2>About Us</h2>
-            <p>
-                We are dedicated to providing the best content and resources for our users.
-                Whether you're here to learn, explore, or connect, we've got you covered.
-            </p>
-            <p>
-                Our mission is to empower individuals and communities through accessible
-                information and engaging experiences.
-            </p>
-            <h2>Our Services</h2>
-            <p>
-                From tutorials and guides to interactive tools, we offer a range of services
-                designed to meet your needs. Explore our offerings to discover how we can help
-                you achieve your goals.
-            </p>
-        </section>
-        <section class="content">
-            <h2>About Us</h2>
-            <p>
-                We are dedicated to providing the best content and resources for our users.
-                Whether you're here to learn, explore, or connect, we've got you covered.
-            </p>
-            <p>
-                Our mission is to empower individuals and communities through accessible
-                information and engaging experiences.
-            </p>
-            <h2>Our Services</h2>
-            <p>
-                From tutorials and guides to interactive tools, we offer a range of services
-                designed to meet your needs. Explore our offerings to discover how we can help
-                you achieve your goals.
-            </p>
-        </section>
-        <section class="content">
-            <h2>About Us</h2>
-            <p>
-                We are dedicated to providing the best content and resources for our users.
-                Whether you're here to learn, explore, or connect, we've got you covered.
-            </p>
-            <p>
-                Our mission is to empower individuals and communities through accessible
-                information and engaging experiences.
-            </p>
-            <h2>Our Services</h2>
-            <p>
-                From tutorials and guides to interactive tools, we offer a range of services
-                designed to meet your needs. Explore our offerings to discover how we can help
-                you achieve your goals.
-            </p>
-        </section>
-        <section class="content">
-            <h2>About Us</h2>
-            <p>
-                We are dedicated to providing the best content and resources for our users.
-                Whether you're here to learn, explore, or connect, we've got you covered.
-            </p>
-            <p>
-                Our mission is to empower individuals and communities through accessible
-                information and engaging experiences.
-            </p>
-            <h2>Our Services</h2>
-            <p>
-                From tutorials and guides to interactive tools, we offer a range of services
-                designed to meet your needs. Explore our offerings to discover how we can help
-                you achieve your goals.
-            </p>
-        </section>
         <section class="content">
             <h2>About Us</h2>
             <p>
@@ -111,7 +50,7 @@ export default {
 <style scoped>
 /* Hero Section */
 .hero {
-    margin-top: 2rem;
+    margin-top: 4rem;
     position: relative;
     text-align: center;
     color: white;

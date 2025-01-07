@@ -47,6 +47,17 @@
         <div id="content">
             <router-view />
         </div>
+        <footer>
+            <span>
+                <router-link to="/">Home</router-link>
+            </span>
+            <span>
+                <router-link to="/welfare">Welfare</router-link>
+            </span>
+            <span>
+                <a href="https://www.stirlingstudentsunion.com/societies/6057/">Get your membership</a>
+            </span>
+        </footer>
     </div>
 </template>
 <script>
@@ -93,6 +104,31 @@ export default {
 };
 </script>
 <style>
+footer {
+    margin-top: auto;
+    position: relative;
+    width: 100%;
+    height: 2.5rem;
+    padding-top: 1rem;
+    background-color: hsl(0, 0%, 92%);
+
+    span a {
+        color: black;
+    }
+
+
+    span {
+        margin-right: 1rem;
+    }
+}
+
+#content {
+    min-height: calc(100vh - 5rem);
+    display: flex;
+    flex-direction: column;
+}
+
+
 /* Base styles for the navigation bar */
 nav {
     display: flex;
@@ -101,6 +137,9 @@ nav {
     /* Ensures space between groups of items */
     padding: 0 1rem;
     background-color: hsl(200, 40%, 15%);
+    background-color: hsla(0, 0%, 96%, 70%);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     height: 3rem;
     position: sticky;
     top: 0;
@@ -117,17 +156,18 @@ nav {
     /* Adds spacing between items */
 
     .nav-item {
-        background-color: aqua;
-        outline: 0.5rem solid aqua;
+        background-color: hsl(200, 0%, 88%);
+        ;
+        outline: 0.4rem solid hsl(200, 0%, 88%);
+        ;
         outline-offset: -2px;
-        border-radius: 0.5rem;
+        border-radius: 0.4rem;
     }
 }
 
 .mobile-item {
     display: none;
 }
-
 
 #menu-toggle {
     display: none;
@@ -152,7 +192,7 @@ nav {
 
 .navText,
 .submenuText {
-    color: hsl(0, 0%, 90%);
+    color: hsl(0, 0%, 10%);
     text-decoration: none;
     cursor: pointer;
     padding: 0.5rem;
@@ -160,7 +200,7 @@ nav {
 
 .navText:hover,
 .submenuText:hover {
-    color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 0%);
 }
 
 /* Submenu styles */
@@ -169,10 +209,9 @@ nav {
     position: absolute;
     top: 3rem;
     left: 0;
-    background-color: hsl(200, 40%, 20%);
+    background-color: hsl(200, 0%, 96%);
     padding: 0.5rem;
     border-radius: 0.25rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     flex-direction: column;
     gap: 0.5rem;
     z-index: 1000;
@@ -200,7 +239,7 @@ nav {
         top: 3rem;
         left: 0;
         width: calc(100% - 2rem);
-        background-color: hsl(200, 40%, 20%);
+        background-color: hsl(200, 0%, 92%);
         padding: 1rem 0;
         padding-left: 2rem;
         gap: 0.5rem;
@@ -212,7 +251,7 @@ nav {
 
     .submenu {
         position: static;
-        background-color: hsl(200, 40%, 25%);
+        background-color: hsl(200, 0%, 92%);
         padding-left: 1rem;
         z-index: 40;
     }
