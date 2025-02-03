@@ -7,6 +7,11 @@
     color: rgba(255, 255, 255, 0.87);
     background-color: #242424;
 
+
+    --text-colour-main: ;
+    --text-colour-accent: #0077B6;
+    --text-colour-accent-darker: #023E8A;
+
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -15,7 +20,7 @@
 
 a {
     font-weight: 500;
-    color: #646cff;
+    color: var(--text-colour-accent);
     text-decoration: inherit;
 }
 
@@ -24,14 +29,15 @@ p {
     text-align: left;
     max-width: 550px;
     margin-bottom: 2rem;
-    margin-top: 1rem;
+    padding-top: 0rem;
 }
 
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+li {
     max-width: 550px;
     text-align: left;
 }
@@ -108,7 +114,8 @@ button:focus-visible {
     }
 
     a:hover {
-        color: #747bff;
+        color: var(--text-colour-accent-darker);
+        text-decoration: underline;
     }
 
     button {
